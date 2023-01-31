@@ -1,0 +1,4 @@
+varName
+class
+100
+01

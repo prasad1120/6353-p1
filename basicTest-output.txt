@@ -1,0 +1,4 @@
+Token #3, with value = varName; at line 0, column 0
+Token #2, with value = class; at line 1, column 0
+Token #47, with value = 100; at line 2, column 0
+Token #47, with value = 01; at line 3, column 0

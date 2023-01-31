@@ -1,0 +1,49 @@
+
+import java_cup.runtime.*;
+
+/**
+Place Terminals Here
+*/
+
+/* TERMINALS */
+
+terminal CLASS;
+terminal ID;
+
+// TRINARY OP
+terminal QUESTION;
+
+// BOOLEAN
+terminal AND, OR, TRUE, FALSE;
+
+// COMMANDS
+terminal READ, PRINT, PRINTLN;
+
+// UNARY OPS
+terminal INC, DEC, NOT;
+
+// MATH
+terminal MULTI, DIV, PLUS, MINUS;
+
+
+// COMPARISON
+terminal EQ, LT, GT, LTE, GTE, NE;
+
+// FLOW
+terminal IF, ELSE, WHILE, RETURN;
+
+// SYNTAX
+terminal SEMI, COMMA, LPAREN, RPAREN, LCURLY, RCURLY, LSQR, RSQR, ASSIGN, COLON;
+
+
+// TYPES
+terminal FINAL;
+terminal CHAR, INT, FLOAT, VOID, BOOL;
+
+// LITERALS
+terminal String CHARLIT, STRLIT, INTLIT, FLOATLIT;
+
+terminal UPLUS, UMINUS;
+
+non terminal dummy;
+dummy ::= ;
