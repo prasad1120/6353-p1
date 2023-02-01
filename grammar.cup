@@ -7,43 +7,54 @@ Place Terminals Here
 
 /* TERMINALS */
 
-terminal CLASS;
-terminal ID;
+terminal CLASS;                // 2
+terminal ID;                   // 3
+terminal LCURLY;               // 4
+terminal RCURLY;               // 5
+terminal LSQB;                 // 6
+terminal RSQB;                 // 7
+terminal FINAL;                // 8
+terminal ASSIGN;               // 9
+terminal SEMIC;                // 10
+terminal VOID;                 // 11
+terminal INT;                  // 12
+terminal CHAR;                 // 13
+terminal BOOL;                 // 14
+terminal FLOAT;                // 15
+terminal IF;                   // 16
+terminal WHILE;                // 17
+terminal READ;                 // 18
+terminal PRINT;                // 19
+terminal PRINTLN;              // 20
+terminal LPAREN;               // 21
+terminal RPAREN;               // 22
+terminal RETURN;               // 23
+terminal INC;                  // 24
+terminal DEC;                  // 25
+terminal ELSE;                 // 26
+terminal String INTLIT;        // 27
+terminal String CHARLIT;       // 28
+terminal String STRLIT;        // 29
+terminal String FLOATLIT;      // 30
+terminal TRUE;                 // 31
+terminal FALSE;                // 32
+terminal NOT;                  // 33
+terminal MINUS;                // 34
+terminal PLUS;                 // 35
+terminal QUESTION;             // 36
+terminal COLON;                // 37
+terminal MULTIPLY;             // 38
+terminal DIVIDE;               // 39
+terminal LT;                   // 40
+terminal GT;                   // 41
+terminal LTE;                  // 42
+terminal GTE;                  // 43
+terminal EQ;                   // 44
+terminal NE;                   // 45
+terminal OR;                   // 46
+terminal AND;                  // 47
+terminal COMMA;                // 48
 
-// TRINARY OP
-terminal QUESTION;
-
-// BOOLEAN
-terminal AND, OR, TRUE, FALSE;
-
-// COMMANDS
-terminal READ, PRINT, PRINTLN;
-
-// UNARY OPS
-terminal INC, DEC, NOT;
-
-// MATH
-terminal MULTI, DIV, PLUS, MINUS;
-
-
-// COMPARISON
-terminal EQ, LT, GT, LTE, GTE, NE;
-
-// FLOW
-terminal IF, ELSE, WHILE, RETURN;
-
-// SYNTAX
-terminal SEMI, COMMA, LPAREN, RPAREN, LCURLY, RCURLY, LSQR, RSQR, ASSIGN, COLON;
-
-
-// TYPES
-terminal FINAL;
-terminal CHAR, INT, FLOAT, VOID, BOOL;
-
-// LITERALS
-terminal String CHARLIT, STRLIT, INTLIT, FLOATLIT;
-
-terminal UPLUS, UMINUS;
 
 non terminal dummy;
 dummy ::= ;
