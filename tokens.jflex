@@ -70,55 +70,55 @@ strlit = \"{str}\"
  * Implement terminals here, ORDER MATTERS!
  */
 
- class                {return newSym(sym.CLASS, "class");}
- else                 {return newSym(sym.ELSE, "else");}
- if	                  {return newSym(sym.IF, "if");}
- while                {return newSym(sym.WHILE, "while");}
- return               {return newSym(sym.RETURN, "return");}
- read                 {return newSym(sym.READ, "read");}
- print                {return newSym(sym.PRINT, "print");}
- printline            {return newSym(sym.PRINTLN, "printline");}
- true                 {return newSym(sym.TRUE, "true");}
- false                {return newSym(sym.FALSE, "false");}
- void                 {return newSym(sym.VOID, "void");}
- int                  {return newSym(sym.INT, "int");}
- char                 {return newSym(sym.CHAR, "char");}
- bool                 {return newSym(sym.BOOL, "bool");}
- float                {return newSym(sym.FLOAT, "float");}
- final                {return newSym(sym.FINAL, "final");}
- "("                  {return newSym(sym.LPAREN, "(");}
- ")"                  {return newSym(sym.RPAREN, ")");}
- "["                  {return newSym(sym.LSQB, "[");}
- "]"                  {return newSym(sym.RSQB, "]");}
- "{"                  {return newSym(sym.LCURLY, "{");}
- "}"                  {return newSym(sym.RCURLY, "}");}
- "?"                  {return newSym(sym.QUESTION, "?");}
- ":"                  {return newSym(sym.COLON, ":");}
- ";"                  {return newSym(sym.SEMIC, ";");}
- "="                  {return newSym(sym.ASSIGN, "=");}
- ","                  {return newSym(sym.COMMA, ",");}
- "~"                  {return newSym(sym.NOT, "~");}
- "*"		          {return newSym(sym.MULTIPLY, "*");}
- "/"		          {return newSym(sym.DIVIDE, "/");}
- "+"		          {return newSym(sym.PLUS, "+");}
- "-"		          {return newSym(sym.MINUS, "-");}
- "<"		          {return newSym(sym.LT, "<");}
- ">"		          {return newSym(sym.GT, ">");}
- "++"		          {return newSym(sym.INC, "++");}
- "--"		          {return newSym(sym.DEC, "--");}
- "=="		          {return newSym(sym.EQ, "==");}
- "<="                 {return newSym(sym.LTE, "<=");}
- ">="                 {return newSym(sym.GTE, ">=");}
- "<>"                 {return newSym(sym.NE, "<>");}
- "||"                 {return newSym(sym.OR, "||");}
- "&&"                 {return newSym(sym.AND, "&&");}
- {intlit}             {return newSym(sym.INTLIT, yytext());}
- {charlit}            {return newSym(sym.CHARLIT, yytext());}
- {strlit}             {return newSym(sym.STRLIT, yytext());}
- {floatlit}           {return newSym(sym.FLOATLIT, yytext());}
- {id}                 {return newSym(sym.ID, yytext());}
- {comment}            {/* comment */}
- {multi_comment}      {/* multiline comment */}
- {whitespace}         { /* Ignore whitespace. */ }
+class                {return newSym(sym.CLASS, "class");}
+else                 {return newSym(sym.ELSE, "else");}
+if	                  {return newSym(sym.IF, "if");}
+while                {return newSym(sym.WHILE, "while");}
+return               {return newSym(sym.RETURN, "return");}
+read                 {return newSym(sym.READ, "read");}
+print                {return newSym(sym.PRINT, "print");}
+printline            {return newSym(sym.PRINTLN, "printline");}
+true                 {return newSym(sym.TRUE, "true");}
+false                {return newSym(sym.FALSE, "false");}
+void                 {return newSym(sym.VOID, "void");}
+int                  {return newSym(sym.INT, "int");}
+char                 {return newSym(sym.CHAR, "char");}
+bool                 {return newSym(sym.BOOL, "bool");}
+float                {return newSym(sym.FLOAT, "float");}
+final                {return newSym(sym.FINAL, "final");}
+"("                  {return newSym(sym.LPAREN, "(");}
+")"                  {return newSym(sym.RPAREN, ")");}
+"["                  {return newSym(sym.LSQB, "[");}
+"]"                  {return newSym(sym.RSQB, "]");}
+"{"                  {return newSym(sym.LCURLY, "{");}
+"}"                  {return newSym(sym.RCURLY, "}");}
+"?"                  {return newSym(sym.QUESTION, "?");}
+":"                  {return newSym(sym.COLON, ":");}
+";"                  {return newSym(sym.SEMIC, ";");}
+"="                  {return newSym(sym.ASSIGN, "=");}
+","                  {return newSym(sym.COMMA, ",");}
+"~"                  {return newSym(sym.NOT, "~");}
+"*"		             {return newSym(sym.MULTIPLY, "*");}
+"/"		             {return newSym(sym.DIVIDE, "/");}
+"+"		             {return newSym(sym.PLUS, "+");}
+"-"		             {return newSym(sym.MINUS, "-");}
+"<"		             {return newSym(sym.LT, "<");}
+">"		             {return newSym(sym.GT, ">");}
+"++"		         {return newSym(sym.INC, "++");}
+"--"		         {return newSym(sym.DEC, "--");}
+"=="		         {return newSym(sym.EQ, "==");}
+"<="                 {return newSym(sym.LTE, "<=");}
+">="                 {return newSym(sym.GTE, ">=");}
+"<>"                 {return newSym(sym.NE, "<>");}
+"||"                 {return newSym(sym.OR, "||");}
+"&&"                 {return newSym(sym.AND, "&&");}
+{intlit}             {return newSym(sym.INTLIT, yytext());}
+{charlit}            {return newSym(sym.CHARLIT, yytext());}
+{strlit}             {return newSym(sym.STRLIT, yytext());}
+{floatlit}           {return newSym(sym.FLOATLIT, yytext());}
+{id}                 {return newSym(sym.ID, yytext());}
+{comment}            {/* comment */}
+{multi_comment}      {/* multiline comment */}
+{whitespace}         { /* Ignore whitespace. */ }
 .                     { System.out.println("Illegal char, '" + yytext() +
                     "' line: " + yyline + ", column: " + yychar); }
